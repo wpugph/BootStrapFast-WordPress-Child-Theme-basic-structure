@@ -26,4 +26,4 @@ add_action( 'wp_enqueue_scripts', 'bsft_theme_enqueue_styles' );
 /**
  * Load VIP helper.
  */
-// TODO make ths work require get_template_directory_uri() . '/inc/vip-helper.php' ;
+require_once( get_stylesheet_directory() . '/inc/vip-helper.php' );
