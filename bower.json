@@ -1,0 +1,12 @@
+{
+  "name": "BootStrapFastWPTheme",
+  "homepage": "https://carl.alber2.com/",
+  "authors": [
+    "Carl Alberto <carl@alber2.com>"
+  ],
+  "license": "GPL2",
+  "private": true,
+  "dependencies": {
+
+  }
+}
