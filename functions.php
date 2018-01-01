@@ -15,7 +15,7 @@ function bsft_theme_enqueue_styles() {
 	$parent_style = 'bootstrapfast-style';
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/assets/css/themestyle.min.css' );
 	wp_enqueue_style( 'child-style',
-		get_stylesheet_directory_uri() . '/assets/css/child-style.css',
+		get_stylesheet_directory_uri() . '/assets/css/child-style.min.css',
 		array( $parent_style ),
 		wp_get_theme()->get( 'Version' )
 	);
@@ -26,4 +26,4 @@ add_action( 'wp_enqueue_scripts', 'bsft_theme_enqueue_styles' );
 /**
  * Load VIP helper.
  */
-require_once( get_stylesheet_directory() . '/inc/vip-helper.php' );
+require_once get_stylesheet_directory() . '/inc/vip-helper.php';
