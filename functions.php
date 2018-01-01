@@ -15,9 +15,8 @@ function bsft_theme_enqueue_styles() {
 	$parent_style = 'bootstrapfast-style';
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/assets/css/themestyle.min.css' );
 	wp_enqueue_style( 'child-style',
-		get_stylesheet_directory_uri() . '/assets/css/child-style.min.css',
-		array( $parent_style ),
-		wp_get_theme()->get( 'Version' )
+		get_stylesheet_directory_uri() . '/assets/css/child-style.css',
+		array( $parent_style )
 	);
 
 }
