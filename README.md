@@ -23,4 +23,3 @@ bower install
 
 or use the start.sh bash script
 
-Later Integrate with CI
