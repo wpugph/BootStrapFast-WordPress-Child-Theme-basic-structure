@@ -16,10 +16,9 @@ Child theme structure
 	- bower.json
 8. gulp 
 
-npm install -g npm@latest
-npm install -g gulp bower
-npm install
-bower install
+### 1 liner paste
+npm install -g npm@latest && npm install -g gulp bower && npm install && bower install
 
 or use the start.sh bash script
 
+### Troubleshooting
