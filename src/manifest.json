@@ -6,9 +6,9 @@
       ],
       "main": true
     },
-    "child-style.min.css": {
+    "themestyle.min.css": {
       "files": [
-        "styles/themestyle.scss"
+        "styles/theme-style.scss"
       ],
       "main": true
     },
@@ -17,6 +17,11 @@
         "styles/editor-style.scss"
       ],
       "main": true
+    },
+    "woocommerce.min.css": {
+      "files": [
+        "styles/woocommerce.scss"
+      ]
     },
     "customizer.js": {
       "files": [
@@ -28,7 +33,7 @@
     }
   },
   "config": {
-    "devUrl": "http://bootstrapfastdemo.lndo.site"
+    "devUrl": "http://bootstrapfast.lndo.site/"
   },
 	"paths": {
 		"dist": "assets/",

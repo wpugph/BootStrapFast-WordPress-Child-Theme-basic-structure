@@ -3,7 +3,10 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+ *
+ * @package BootStrapFast
  */
+
 ( function() {
 	var container, button, menu, links, i, len;
 
@@ -43,7 +46,7 @@
 	};
 
 	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
+	links = menu.getElementsByTagName( 'a' );
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {
@@ -86,7 +89,8 @@
 
 				if ( ! menuItem.classList.contains( 'focus' ) ) {
 					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+					var menuParentCount = menuItem.parentNode.children.length;
+					for ( i = 0; i < menuParentCount; ++i ) {
 						if ( menuItem === menuItem.parentNode.children[i] ) {
 							continue;
 						}
@@ -97,8 +101,8 @@
 					menuItem.classList.remove( 'focus' );
 				}
 			};
-
-			for ( i = 0; i < parentLink.length; ++i ) {
+			var parentLinkCount = parentLink.length;
+			for ( i = 0; i < parentLinkCount; ++i ) {
 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
 		}
@@ -136,5 +140,3 @@
 		}, false );
 	}
 })();
-
-//# sourceMappingURL=themes.js.map
